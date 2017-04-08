@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { connect } from 'react-redux';
 import Course from '../component/Course';
 import AddButton from '../component/AddButton';
 
@@ -10,7 +10,7 @@ class Courses extends React.Component {
                 Courses Container
                 {[1,2,3,4,5].map((el, i) => {
                     return (
-                        <Course />
+                        <Course key={i}/>
                     );
                 })}
                 <AddButton />
@@ -19,4 +19,4 @@ class Courses extends React.Component {
     }
 }
 
-export default Courses;
+export default connect()(Courses);

@@ -1,9 +1,17 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { selectCourse } from '../actions/actions';
 
 class Course extends React.Component {
+    handleClick() {
+        const { dispatch } = this.props;
+        const { course } = this.props;
+        dispatch(selectCourse(course.course));
+    }
     render () {
-        return <div>{this.props.course.course}</div>;
+        const { course } = this.props;
+        return <div onClick={this.handleClick.bind(this)}>{course.course}</div>;
     }
 }
 
-export default Course;
+export default connect()(Course);

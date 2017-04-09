@@ -11,3 +11,12 @@ export var coursesReducer = (state = [], action) => {
 			return state;
 	}
 };
+
+export const courseIndexReducer = (state = 0, action) => {
+	switch (action.type) {
+		case 'SELECT_COURSE':
+			return action.id;
+		default:
+			return state;
+	}
+};

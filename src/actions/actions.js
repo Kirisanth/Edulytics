@@ -4,3 +4,10 @@ export const addCourse = (text) => {
     text
   };
 };
+
+export const selectCourse = (id) => {
+  return {
+    type: 'SELECT_COURSE',
+    id
+  };
+};

@@ -4,8 +4,7 @@ import { selectCourse } from '../actions/actions';
 
 class Course extends React.Component {
     handleClick() {
-        const { dispatch } = this.props;
-        const { course } = this.props;
+        const { dispatch, course } = this.props;
         dispatch(selectCourse(course.course));
     }
     render () {

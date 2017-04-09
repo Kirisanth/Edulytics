@@ -12,6 +12,7 @@ class AddButton extends React.Component {
             <div>
                 <input ref="course"/>
                 <div onClick={this.handleSubmit.bind(this)}>AddButton</div>
+                <button>Test</button>
             </div>
         );
     }

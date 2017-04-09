@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import CourseList from '../component/CourseList';
 import AddButton from '../component/AddButton';
 
-class Courses extends React.Component {
+class CoursesContainer extends React.Component {
     render () {
         return (
             <div style={this.props.style}>
@@ -14,4 +14,4 @@ class Courses extends React.Component {
     }
 }
 
-export default connect()(Courses);
+export default connect()(CoursesContainer);

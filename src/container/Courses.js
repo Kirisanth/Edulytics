@@ -1,6 +1,5 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Course from '../component/Course';
 import CourseList from '../component/CourseList';
 import AddButton from '../component/AddButton';
 

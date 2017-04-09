@@ -5,10 +5,15 @@ import { addCourse } from '../actions/actions';
 class AddButton extends React.Component {
     handleSubmit() {
         const { dispatch } = this.props;
-        dispatch(addCourse('Math'));
+        dispatch(addCourse(this.refs.course.value));
     }
     render() {
-        return <div onClick={this.handleSubmit.bind(this)}>AddButton</div>;
+        return (
+            <div>
+                <input ref="course"/>
+                <div onClick={this.handleSubmit.bind(this)}>AddButton</div>
+            </div>
+        );
     }
 }
 

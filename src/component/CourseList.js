@@ -9,7 +9,7 @@ class CourseList extends React.Component {
             <div>
                 {courses.map((el, i) => {
                     return (
-                        <Course key={i}/>
+                        <Course key={i} course={el} />
                     );
                 })}
             </div>

@@ -12,6 +12,7 @@ class GraphContainer extends React.Component {
             <div style={this.props.style}>
                 <div>Graph Container</div>
                 <div>{name}</div>
+                <pre>{JSON.stringify(course)}</pre>
                 <Graph />
             </div>
         );

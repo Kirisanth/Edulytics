@@ -11,3 +11,10 @@ export const selectCourse = (id) => {
     id
   };
 };
+
+export const addAssessment = (text) => {
+  return {
+    type: 'ADD_ASSESSMENT',
+    text
+  };
+};

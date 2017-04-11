@@ -1,10 +1,11 @@
 import { combineReducers, createStore, compose } from 'redux';
-import { coursesReducer, courseIndexReducer } from '../reducers/reducers';
+import { coursesReducer, courseIndexReducer, assessmentsReducer } from '../reducers/reducers';
 
 export var configure = (initialState = {}) => {
 	var reducer = combineReducers({
 		courses: coursesReducer,
-		index: courseIndexReducer
+		index: courseIndexReducer,
+		assessment: assessmentsReducer
 	});
 
 	var store = createStore(reducer, initialState, compose(

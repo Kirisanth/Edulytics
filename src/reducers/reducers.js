@@ -34,18 +34,3 @@ export const courseIndexReducer = (state = 0, action) => {
 			return state;
 	}
 };
-
-// export const assessmentsReducer = (state = [], action) => {
-// 	switch (action.type) {
-// 		case 'ADD_ASSESSMENT':
-// 			return [
-// 				...state,
-// 				{
-// 					type: "TEST",
-// 					mark: action.text
-// 				}
-// 			];
-// 		default:
-// 			return state;
-// 	}
-// };

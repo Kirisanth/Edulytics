@@ -5,9 +5,6 @@ import AddAssessmentButton from '../component/AddAssessmentButton';
 
 class AssessmentsContainer extends React.Component {
     render () {
-        const { course, index } = this.props;
-        console.log("PROPS", this.props);
-
         return (
             <div style={this.props.style}>
                 Assessments Container

@@ -11,11 +11,11 @@ class App extends Component {
     return (
       <div className="App">
         <div style={{ display: "inline-block" }}>
-          <CoursesContainer style={{backgroundColor: "green"}}/>
+          <CoursesContainer style={{backgroundColor: "yellow"}}/>
         </div>
         <div style={{ display: "inline-block" }}>
           <GraphContainer style={{backgroundColor: "red"}}/>
-          <AssessmentsContainer style={{backgroundColor: "blue"}}/>
+          <AssessmentsContainer style={{backgroundColor: "orange"}}/>
         </div>
       </div>
     );

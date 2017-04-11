@@ -5,7 +5,7 @@ export var configure = (initialState = {}) => {
 	var reducer = combineReducers({
 		courses: coursesReducer,
 		index: courseIndexReducer,
-		assessment: assessmentsReducer
+		// assessment: assessmentsReducer
 	});
 
 	var store = createStore(reducer, initialState, compose(

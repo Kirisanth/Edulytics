@@ -4,8 +4,9 @@ import { addAssessment } from '../actions/actions';
 
 class AddAssessmentButton extends React.Component {
     handleSubmit() {
-        const { dispatch } = this.props;
-        dispatch(addAssessment(this.refs.course.value));
+        const { dispatch, index } = this.props;
+        console.log("t",this.props);
+        dispatch(addAssessment(index, this.refs.course.value));
     }
     render() {
         return (
@@ -18,4 +19,4 @@ class AddAssessmentButton extends React.Component {
     }
 }
 
-export default connect()(AddAssessmentButton);
+export default connect((state)=> state)(AddAssessmentButton);

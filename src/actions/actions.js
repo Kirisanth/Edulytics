@@ -12,9 +12,10 @@ export const selectCourse = (id) => {
   };
 };
 
-export const addAssessment = (text) => {
+export const addAssessment = (course, assessment) => {
   return {
     type: 'ADD_ASSESSMENT',
-    text
+    course,
+    assessment
   };
 };

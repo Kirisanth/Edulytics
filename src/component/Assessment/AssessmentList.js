@@ -1,17 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import Assessment from './Assessment';
 
 class AssessmentList extends React.Component {
     render() {
+        
+        const { courses, index } = this.props;
+        const course = courses.find(function(element) { return element.course === index; });
+        console.log("AssessmentList", course);
+        // let assessment = course.assessment;
         return (
             <div>
                 AssessmentList
-                {[1,2,3,4,5].map((el, i) => {
+                {/*{assessment.map((el, i) => {
                     return <Assessment key={i}/>;
-                })}
+                })}*/}
             </div>
         );
     }
 }
 
-export default AssessmentList;
+export default connect((state) => state)(AssessmentList);

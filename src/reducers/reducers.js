@@ -10,9 +10,7 @@ export var coursesReducer = (state = [], action) => {
 			];
 		case 'ADD_ASSESSMENT':
 			return state.map((course) => {
-				debugger;
-				if(course.course === action.course) {
-					debugger;
+				if(course.course === action.course) {				
 					return {
 						...course,
 						assessment: [...course.assessment,action.assessment]

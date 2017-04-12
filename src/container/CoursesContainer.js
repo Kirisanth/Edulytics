@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import CourseList from '../component/CourseList';
-import AddButton from '../component/AddButton';
+import CourseList from '../component/Course/CourseList';
+import AddButton from '../component/Course/AddButton';
 
 class CoursesContainer extends React.Component {
     render () {

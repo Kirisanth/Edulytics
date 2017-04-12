@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import AssessmentList from '../component/Assessment/AssessmentList';
-import AddAssessmentButton from '../component/AddAssessmentButton';
+import AddAssessmentButton from '../component/Assessment/AddAssessmentButton';
 
 class AssessmentsContainer extends React.Component {
     render () {

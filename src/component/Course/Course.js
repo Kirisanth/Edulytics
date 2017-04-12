@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { selectCourse } from '../actions/actions';
+import { selectCourse } from '../../actions/actions';
 
 class Course extends React.Component {
     handleClick() {

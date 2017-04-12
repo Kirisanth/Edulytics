@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { addCourse } from '../actions/actions';
+import { addCourse } from '../../actions/actions';
 
 class AddButton extends React.Component {
     handleSubmit() {

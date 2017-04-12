@@ -10,10 +10,17 @@ export var coursesReducer = (state = [], action) => {
 			];
 		case 'ADD_ASSESSMENT':
 			return state.map((course) => {
-				if(course.course === action.course) {				
+				if(course.course === action.course) {
+
+					let assessment = {
+						type: action.assessmentType,
+						mark: 10,
+						weight: 10
+					};
+
 					return {
 						...course,
-						assessment: [...course.assessment,action.assessment]
+						assessment: [...course.assessment, assessment]
 					};
 				} else {
 					return course;

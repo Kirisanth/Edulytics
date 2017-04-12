@@ -7,16 +7,22 @@ class AssessmentList extends React.Component {
         
         const { courses, index } = this.props;
         const course = courses.find(function(element) { return element.course === index; });
-        console.log("AssessmentList", course);
-        // let assessment = course.assessment;
-        return (
-            <div>
-                AssessmentList
-                {/*{assessment.map((el, i) => {
-                    return <Assessment key={i}/>;
-                })}*/}
-            </div>
-        );
+
+        if (course) {
+            let assessments = course.assessment;
+            return (
+                <div>
+                    AssessmentList
+                    {assessments.map((el, i) => {
+                        return <Assessment key={i} data={el}/>;
+                    })}
+                </div>
+            );
+        } else {
+            return (
+                <div>No Data</div>
+            );
+        }
     }
 }
 

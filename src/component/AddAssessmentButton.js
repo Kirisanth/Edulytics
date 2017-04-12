@@ -5,7 +5,7 @@ import { addAssessment } from '../actions/actions';
 class AddAssessmentButton extends React.Component {
     handleSubmit() {
         const { dispatch, index } = this.props;
-        dispatch(addAssessment(index, this.refs.course.value));
+        dispatch(addAssessment(index, this.refs.course.value, 10, 10));
     }
     render() {
         return (

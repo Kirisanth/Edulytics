@@ -1,21 +1,25 @@
-export const addCourse = (text) => {
+// @flow
+export const addCourse = (text : string) => {
   return {
     type: 'ADD_COURSE',
     text
   };
 };
 
-export const selectCourse = (id) => {
+//TODO: Need to be able to select by an id, currently using name
+export const selectCourse = (id : string) => {
   return {
     type: 'SELECT_COURSE',
     id
   };
 };
 
-export const addAssessment = (course, assessment) => {
+export const addAssessment = (course : string, assessmentType : string, mark : number, weight : number) => {
   return {
     type: 'ADD_ASSESSMENT',
     course,
-    assessment
+    assessmentType,
+    mark,
+    weight
   };
 };

@@ -1,9 +1,9 @@
 import React from 'react';
 
-class LineGraph extends React.Component {
+class PieGraph extends React.Component {
     render () {
         return <div>Line Graph</div>;
     }
 }
 
-export default LineGraph;
+export default PieGraph;

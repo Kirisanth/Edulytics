@@ -1,7 +1,9 @@
 import React from 'react';
 
-export default class Graph extends React.Component {
+class Graph extends React.Component {
     render () {
-        return <div>Graph</div>
+        return <div>Graph</div>;
     }
 }
+
+export default Graph;

@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 import Graph from '../component/Graph/Graph';
+import GraphSelector from '../component/Graph/GraphSelector';
 
 class GraphContainer extends React.Component {
     render () {
@@ -14,6 +15,7 @@ class GraphContainer extends React.Component {
                 <div>{name}</div>
                 <pre>{JSON.stringify(course)}</pre>
                 <Graph />
+                <GraphSelector />
             </div>
         );
     }

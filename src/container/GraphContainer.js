@@ -14,8 +14,8 @@ class GraphContainer extends React.Component {
                 <div>Graph Container</div>
                 <div>{name}</div>
                 <pre>{JSON.stringify(course)}</pre>
-                <Graph />
-                <GraphSelector />
+                <Graph style={{ display: "inline-block" }} />
+                <GraphSelector style={{ display: "inline-block" }}/>
             </div>
         );
     }

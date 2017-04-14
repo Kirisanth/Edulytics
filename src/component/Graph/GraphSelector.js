@@ -6,7 +6,7 @@ class GraphSelector extends React.Component {
     }
     render () {
         return (
-            <div>
+            <div style={this.props.style} >
                 <div>Graph Selector</div>
                 <ul>
                     <li onClick={this.handleClick}>Line Graph</li>

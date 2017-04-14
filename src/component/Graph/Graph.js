@@ -2,7 +2,7 @@ import React from 'react';
 
 class Graph extends React.Component {
     render () {
-        return <div>Graph</div>;
+        return <div style={this.props.style} >Graph</div>;
     }
 }
 

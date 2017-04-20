@@ -14,6 +14,14 @@ export const selectCourse = (id : string) => {
   };
 };
 
+export const changeCourse = (oldCourseName : string, newCourseName : string) => {
+  return {
+    type: 'EDIT_COURSE_NAME',
+    oldCourseName,
+    newCourseName
+  };
+};
+
 export const addAssessment = (course : string, assessmentType : string, mark : number, weight : number) => {
   return {
     type: 'ADD_ASSESSMENT',
@@ -23,3 +31,8 @@ export const addAssessment = (course : string, assessmentType : string, mark : n
     weight
   };
 };
+
+//TODO: Add SELECT_ASSESSMENT
+
+//TODO: Add EDIT_ASSESSMENT
+
